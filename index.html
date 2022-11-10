@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoebox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section id="master-container" class="main">
+        <header>
+            <section class="functional-header">
+                <a href="#">flag image to change language?</a>
+                <a href="login.html">Login/Sign up</a>
+                <a href="favourites.html">Favourites</a>
+                <a href="help.html">Help</a>
+                <a href="settings.html">Preferences</a>
+                <a href="basket.html">Basket</a>
+            </section>
+
+            <section>
+                <h1 class="title">TITLE</h1>
+            </section>
+            
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="mens.html">MEN</a></li>
+                    <li><a href="womens.html">WOMEN</a></li>
+                    <li><a href="kids.html">KIDS</a></li>
+                    <li><a href="specials.html">SPECIALS</a></li>
+                    <li><a href="newarrivals.html">NEW ARRIVALS</a></li>
+                    <li><!--<img src="assets/searchicon.png" id="search-icon"></li>
+                    <li><input type="text" placeholder="Search..."></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <section id="product-display">
+            <article id="showcase">
+                <img `key=${showcaseImagesArr[currentImage]}` class="showcase fade" src="assets/showcasemenstrainer.jpg" alt="Showcase display image">
+                <a class="prev" onclick="">&#10094;</a>
+                <a class="next" onclick="">&#10095;</a>
+                <article style="text-align:center">
+                    <span class="dot" onclick="showcaseImagesArr[0]"></span>
+                    <span class="dot" onclick="showcaseImagesArr[1]"></span>
+                    <span class="dot" onclick="showcaseImagesArr[2]"></span>
+                    <span class="dot" onclick="showcaseImagesArr[3]"></span>
+                </article>
+            </article>
+
+            <article id="mens-trainers">
+                
+            </article>
+
+            <article id="mens-formals">
+
+            </article>
+
+            <article id="womens-trainers">
+
+            </article>
+
+            <article id="womens-formals">
+
+            </article>
+        </section>
+
+        <footer>
+            <p>Aaron Warsop</p>
+            <p>aaronwarsop@gmail.com | GitHub | LinkedIn</p>
+            <p>Copyright disclaimer</p>
+        </footer>
+    </section>
+</body>
+</html>

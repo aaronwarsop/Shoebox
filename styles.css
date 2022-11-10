@@ -1,0 +1,103 @@
+#master-container {
+
+}
+
+.main {
+
+}
+
+header {
+
+}
+
+.functional-header {
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.title {
+    text-align: center;
+}
+
+nav {
+
+}
+
+.navbar {
+    text-align: center;
+    padding: .5em;
+    margin: .5em;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: .5em;
+}
+
+.navbar input[type=text] {
+    float: right;
+    border-radius: 1em;
+    padding: .5em;
+}
+
+#search-icon {
+    max-width: 4%;
+    max-height: 4%;
+    float: right;
+    padding: .5em;
+}
+
+
+*{box-sizing: border-box;}
+
+.showcase {
+    display: block;
+    margin: auto;
+    position: relative;
+    max-width: 1000px;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1em;
+    margin-top: -8em;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+  }
