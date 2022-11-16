@@ -9,7 +9,7 @@ header {
 
 .functional-header {
     margin-top: 1em;
-    
+    font-size: 18px;
 }
 
 .functional-header ul {
@@ -65,15 +65,13 @@ header a {
   text-decoration: none;
 }
 
-
-
-.title {
+#title {
     text-align: center;
     color: teal;
-    font-size: 40px;
+    font-size: 64px;
     padding: 0;
-    margin-bottom: 1em;
-    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-top: 0;
 }
 
 nav {
@@ -103,7 +101,7 @@ nav {
 }
 
 .home-content {
-  background-color: rgb(236, 75, 75);
+  background-color: rgb(250, 243, 231);
 }
 
 .product-display {
@@ -113,12 +111,16 @@ nav {
 }
 
 .slideshow {
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
+  /* min-width?*/
+  width: 1200px;
+  height: 600px;
+  border-radius: 5px;
   overflow: hidden;
   margin-bottom: 5vh;
-  margin-top: 2vh;
+}
+
+.slideshow:hover {
+  
 }
 
 .slides {
@@ -137,14 +139,14 @@ nav {
 }
 
 .slide img {
-    width: 800px;
-    height: 500px;
+    width: 1200px;
+    height:600px;
 }
 
 .navigation-manual {
   position: absolute;
-  width: 800px;
-  margin-top: -40px;
+  width: 1200px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -158,7 +160,7 @@ nav {
 }
 
 .manual-btn:hover {
-  background-color: black;
+  background-color: red;
 }
 
 .manual-btn:not(:last-child) {
@@ -206,9 +208,11 @@ nav {
 
 .nav-img {
   width: 100%;
+  /* width: auto; */
+  max-width: 100vh;
   margin-left: 5vh;
   margin-right: 5vh;
-  border: solid 2px;
+  border: black solid 2px;
 }
 
 footer {

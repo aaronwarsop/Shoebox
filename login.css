@@ -1,0 +1,21 @@
+.main-content {
+    background-color: rgb(250, 243, 231);
+    height: 65vh;
+    text-align: center;
+}
+
+.login-form {
+    
+}
+
+.email-input {
+    padding-top: 20vh;
+}
+
+.password-input {
+    padding-top: 1vh;
+}
+
+.login-extra {
+    
+}
