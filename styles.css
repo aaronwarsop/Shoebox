@@ -72,6 +72,19 @@ header a {
     padding: 0;
     margin-bottom: .5em;
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#logo {
+  height: 10vh;
+  width: 10vh;
+  margin: 0;
+  padding: 0;
+}
+
+.title-logo {
+  display: inline;
 }
 
 nav {
@@ -160,7 +173,7 @@ nav {
 }
 
 .manual-btn:hover {
-  background-color: red;
+  background-color: black;
 }
 
 .manual-btn:not(:last-child) {

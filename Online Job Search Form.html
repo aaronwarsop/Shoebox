@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://now.ntu.ac.uk/content/enforced/886622-SOFT20181_19436_SEM-202223-01/Jobsearchform.html -->
+<html><script type="text/javascript" src="chrome-extension://fnmojcogfimjffgligjfllbeegnodahp/webpack_common.js"></script><script type="text/javascript" src="chrome-extension://fnmojcogfimjffgligjfllbeegnodahp/webpack_content.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Online Job Search Form</title>
+		<link rel="stylesheet" href="./Online Job Search Form_files/jobsear1ch.css" type="text/css">
+		<script ...=""></script>
+	<script>function lti_launch( vars, target ) {
+						var query = '';
+						var new_tab = false;
+
+						for(var key in vars) {
+							if(query.length == 0) {
+								query += '?' + key + '=' + encodeURIComponent(vars[key]);
+							}
+							else {
+								query += '&' + key + '=' + encodeURIComponent(vars[key]);
+							}
+						}
+
+						var url = '/d2l/customization/pearsonlti/6605/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script><script src="./Online Job Search Form_files/mathjax.js.download" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.3,
+							'renderLatex': false
+						});
+					}
+				});</script><script src="./Online Job Search Form_files/prism.js.download" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					var params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					var el = document.getElementsByTagName( 'iframe' );
+					for ( var i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+							el[i].style.width = '100%';
+							console.info( 'Setting iFrame height to ' + params.height );
+							console.info( 'Setting iFrame width to 100%' );
+						}
+					}
+				});</script></head>
+	<body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed="">
+		<section class="formcontainer">
+		<h1>Online Job Search</h1>
+		<form action="https://udon.ads.ntu.ac.uk/staff/cmp3aladet/website-1/code/formtesting.php" method="post">
+		
+			<fieldset>
+				<legend>Contact Information</legend>
+				<p><label for="name" class="contact" accesskey="N">Name:</label><input type="text" size="30" name="name" id="name" autofocus="" placeholder="Name" pattern="/[a-zA-Z0-9]{6,10}/" title="Please enter a name between 6 and 10 characters" required></p>
+				<p><label for ="email" class="contact">Email:</label><input type="text" size="30" name="email" id="email" placeholder="name@example.com" required></p>
+				<p><label for="phone" class="contact">Phone:</label><input type="text" size="30" name="phone" id="phone" placeholder="Mobile number" pattern="/0[0-9]{11}" required></p>
+			</fieldset>
+			
+			<fieldset class="area">
+				<legend>Select Your Area(s) of Interest:</legend>
+				<p><input type="checkbox" name="jobtitle" value="Frontend Development"><label class="interest">Frontend Web Development</label>
+					<input type="checkbox" name="jobtitle" value="Backend Development"><label class="interest">Backend Web Development</label></p>
+				<p><input type="checkbox" name="jobtitle" value="Full Stack Development"><label class="interest">Full Stack Web Development</label>
+					<input type="checkbox" name="jobtitle" value="Mobile App Development"> <label class="interest">Mobile Application Development</label></p>
+			</fieldset>
+			
+			<p>Select the type of position you desire:
+			<select name="position">
+				<option>Part-time contract</option>
+				<option>Full-time contract</option>
+				<option>Part-time permanent</option>
+				<option>Full-time permanent</option>
+			</select>
+			</p>
+			
+			<p>Are you willing to relocate?
+				<label>Yes</label><input type="radio" value="yes" name="relocate">
+				<label>No</label><input type="radio" value="no" name="relocate">
+			</p>
+			
+		<p>
+			<input class="jobaction" type="submit" value="Submit">
+			<input class="jobreset" type="reset" value="Clear">
+		</p>
+	</form></section>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
