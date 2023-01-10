@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENS</title>
+
+    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="main.js" defer></script>
+    <script src="productpage.js" defer></script>
+</head>
+<body>
+    <header>
+        <article class="title-and-logo">
+            <h1 class="title" title="Home"><a href="index.html">SHOEBOX</a></h1>
+            <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo" title="Home"></a>
+        </article>
+        
+
+        <nav class="navbar">
+            <ul class="dropdown">
+                <li class="dropdown-link"><a href="mens.html">MEN</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Streetwear</a></li>
+                        <li><a href="">Formals</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-link"><a href="womens.html">WOMEN</a>
+                    <ul class="dropdown-menu dropdown-menu-womens">
+                        <li><a href="">Streetwear</a></li>
+                        <li><a href="">Formals</a></li>
+                    </ul>
+                </li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="specials.html">SPECIALS</a></li>
+            </ul>
+        </nav>
+
+        <article class="functional-header">
+            <ul class="func-nav">
+                <li><a href="login.html"><i class="uil uil-user" title="Login/Singup"></i></a></li>
+                <li><a id="settings-button"><i class="uil uil-cog" title="Settings"></i></a>
+                    <dialog class="settings-popup">
+                        <div class="settings-flexbox">
+                            <span class="settings-top">
+                                <h2>Settings</h2>
+                                <i id="close-button" class="uil uil-multiply"></i>
+                            </span>
+                            <div class="font-size">
+                                <h5>Font Size:</h5>
+                                <ul>
+                                    <li><button class="small-font">Small</button></li>
+                                    <li><button class="medium-font">Medium</button></li>
+                                    <li><button class="large-font">Large</button></li>
+                                </ul>
+                            </div>
+                            <div class="font-colour">
+                                <h5>Font Colour:</h5>
+                                <input type="color" id="font-colour-input">
+                                <button id="font-colour-apply-btn">Apply</button>
+                            </div>
+                            <div class="background-colour">
+                                <h5>Backdrop Colour:</h5>
+                                <input type="color" id="background-colour-input">
+                                <button id="background-colour-apply-btn">Apply</button>
+                            </div>
+                            <div>
+                                <h5>Theme:</h5>
+                                <select id="theme-selector">
+                                    <option value="light-theme">Light Theme</option>
+                                    <option value="dark-theme">Dark Theme</option>
+                            </select>
+                            </div>
+                            <button class="restore-button">Default</button>
+                        </div>
+                    </dialog>
+                </li>
+                <li><a href="basket.html"><i class="uil uil-shopping-basket" title="Basket"></i></a></li>
+            </ul>
+        </article>
+        <div class="bx bx-menu" id="menu-responsive"></div>
+    </header>
+        
+    <section class="page-content">
+        <article class="filter-container">
+            <div class="sort-by-button">
+                <div class="dropdown">
+                    <ul class="dropdown-sort">
+                        <li>Sort by: <a href="">Relevance</a>
+                            <ul>
+                                <li>Relevance</li>
+                                <li>Price: Low-High</li>
+                                <li>Price: High-Low</li>
+                            </ul>
+                        </li>
+                </div>
+            </div>
+            <div class="filter-list-item">
+                <h3>Size</h3>
+                <ul class="filter-size">
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                </ul>
+            </div>
+            <div class="filter-list-item">
+                <h3>Price</h3>
+                <ul class="filter-price">
+                    <li>£0-£29</li>
+                    <li>£30-£59</li>
+                    <li>£60+</li>
+                </ul>
+            </div>
+                
+            <div class="filter-list-item">
+                <h3>Colour</h3>
+                <ul class="filter-colour">
+                    <li>Black</li>
+                    <li>White</li>
+                    <li>Blue</li>
+                    <li>Grey</li>
+                    <li>Brown</li>
+                </ul>
+            </div>
+        </article>
+        
+        <section class="catalog-container">
+            <article id="block1" class="product-block">
+                <a><img class="product-image" src="assets/test3.jpg"></img></a>
+                <div class="product-details">
+                    <p>Nike Air Force 1s</p>
+                    <p>£99.99</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block2" class="product-block">
+                <a><img class="product-image" src="assets/test3.jpg"></img></a>
+                <div class="product-details">
+                    <p>Vans Classic</p>
+                    <p>£65.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block3" class="product-block">
+                <a><img class="product-image" src="assets/test3.jpg"></img></a>
+                <div class="product-details">
+                    <p>Vans Classic</p>
+                    <p>£60.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block4" class="product-block">
+                <a><img class="product-image" src="assets/test3.jpg"></img></a>
+                <div class="product-details">
+                    <p>Name of shoe</p>
+                    <p>£40.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block5" class="product-block">
+                <a><img class="product-image" src="assets/test3.jpg"></img></a>
+                <div class="product-details">
+                    <p>Name of shoe</p>
+                    <p>£45.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block6" class="product-block">
+                <a><img class="product-image" src="assets/test3.jpg"></img></a>
+                <div class="product-details">
+                    <p>Name of shoe</p>
+                    <p>£35.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <footer>
+        <section class="footer-content">
+            <article class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="mens.html">Mens</a></li>
+                    <li><a href="womens.html">Womens</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                </ul>
+            </article>
+            <article class="footer-contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>aaron.warsop2021@my.ntu.ac.uk</li>
+                    <li>aaronwarsop@gmail.com</li>
+                </ul>
+            </article>
+            <article class="footer-socials">
+                <h3>Socials</h3>
+                <ul>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </article>
+            <div class="copyright">
+                Copyright © Aaron Warsop
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

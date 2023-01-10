@@ -1,0 +1,14 @@
+.page-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.shopping-cart-container {
+    background: wheat;
+}
+
+.price-total-container {
+    background: wheat;
+}

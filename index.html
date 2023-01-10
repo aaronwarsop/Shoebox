@@ -6,108 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOEBOX</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="main.js" defer></script>
+    <script src="home.js" defer></script>
 </head>
 <body>
     <header>
-        <section class="functional-header">
-            <ul>
-                <li><a href="basket.html">Basket</a></li>
-                <li><a href="help.html">Help</a></li>
-                <li><a href="preferences.html">Preferences</a>
-                    <ul class="dropdown">
-                        <li><a href="">font size</a></li>
-                        <li><a href="">color theme</a></li>
+        <article class="title-and-logo">
+            <h1 class="title" title="Home"><a href="index.html">SHOEBOX</a></h1>
+            <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo" title="Home"></a>
+        </article>
+        
+
+        <nav class="navbar">
+            <ul class="dropdown">
+                <li class="dropdown-link"><a href="mens.html">MEN</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Streetwear</a></li>
+                        <li><a href="">Formals</a></li>
                     </ul>
                 </li>
-                <li><a href="login.html">Login/Sign up</a></li>
-            </ul>
-        </section>
-
-        <article class="title-logo">
-            <img id="logo" src="assets/logo.png">
-            <h1 id="title" title="Home"><a href="index.html">SHOEBOX</a></h1>
-        </article>
-                
-    
-        <nav class="navbar">
-            <ul>
-                <li><a href="mens.html">MEN</a></li>
-                <li><a href="womens.html">WOMEN</a></li>
+                <li class="dropdown-link"><a href="womens.html">WOMEN</a>
+                    <ul class="dropdown-menu dropdown-menu-womens">
+                        <li><a href="">Streetwear</a></li>
+                        <li><a href="">Formals</a></li>
+                    </ul>
+                </li>
                 <li><a href="kids.html">KIDS</a></li>
                 <li><a href="specials.html">SPECIALS</a></li>
-                <li><a href="newarrivals.html">NEW ARRIVALS</a></li>  
             </ul>
         </nav>
+
+        <article class="functional-header">
+            <ul class="func-nav">
+                <li><a href="login.html"><i class="uil uil-user" title="Login/Singup"></i></a></li>
+                <li><a id="settings-button"><i class="uil uil-cog" title="Settings"></i></a>
+                    <dialog class="settings-popup">
+                        <div class="settings-flexbox">
+                            <span class="settings-top">
+                                <h2>Settings</h2>
+                                <i id="close-button" class="uil uil-multiply"></i>
+                            </span>
+                            <div class="font-size">
+                                <h5>Font Size:</h5>
+                                <ul>
+                                    <li><button class="small-font">Small</button></li>
+                                    <li><button class="medium-font">Medium</button></li>
+                                    <li><button class="large-font">Large</button></li>
+                                </ul>
+                            </div>
+                            <div class="font-colour">
+                                <h5>Font Colour:</h5>
+                                <input type="color" id="font-colour-input">
+                                <button id="font-colour-apply-btn">Apply</button>
+                            </div>
+                            <div class="background-colour">
+                                <h5>Backdrop Colour:</h5>
+                                <input type="color" id="background-colour-input">
+                                <button id="background-colour-apply-btn">Apply</button>
+                            </div>
+                            <div>
+                                <h5>Theme:</h5>
+                                <select id="theme-selector">
+                                    <option value="light-theme">Light Theme</option>
+                                    <option value="dark-theme">Dark Theme</option>
+                            </select>
+                            </div>
+                            <button class="restore-button">Default</button>
+                        </div>
+                    </dialog>
+                </li>
+                <li><a href="basket.html"><i class="uil uil-shopping-basket" title="Basket"></i></a></li>
+            </ul>
+        </article>
+        <div class="bx bx-menu" id="menu-responsive"></div>
     </header>
     
-    <section class="home-content">
-        <section class="product-display">
-            <article class="slideshow">
-                <article class="slides">
-                    <input type="radio" name="radio-btn" id="radio1" checked>
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
+    <section class="page-content">
+        <article class="slideshow">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked="checked">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
                       
-                    <div class="slide first">
-                        <img src="assets/placeholder-image.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/placeholder-image.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/placeholder-image.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="assets/placeholder-image.png" alt="">
-                    </div>
-                </article>
+                <div class="slide first">
+                    <img src="assets/showcase-mens-trainers.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/test3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/showcase-mens-formals.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/test6.jpg" alt="">
+                </div>
+            </div>
     
-                    <article class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                    </article>
-            </article>
-        </section>
-    
-        <section class="top-home">
-            <article id="#">
-                <a href="">
-                    <img src="assets/placeholder-image.png" class="nav-img" alt="">
-                </a>
-            </article>
-    
-            <article id="#">
-                <a href="">
-                    <img src="assets/placeholder-image.png" class="nav-img" alt="">
-                </a>
-            </article>
-        </section>
-    
-        <section class="bottom-home">
-            <article id="#">
-                <a href="">
-                    <img src="assets/placeholder-image.png" class="nav-img" alt="">
-                </a>
-            </article>
-    
-            <article id="#">
-                <a href="">
-                    <img src="assets/placeholder-image.png" class="nav-img" alt="">
-                </a>
-            </article>
-        </section>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </article>
+
+        <article class="product-information">
+            <h2 id="product-info-header">Why shop with us?</h2>
+            <p id="product-info-para">Put some random text giving information about the products on the website and sell them to the audience</p>
+        </article>
+
+        <article class="product-banner">
+            <img class="" src="assets/useabl2.jpg">
+        </article>
+
+        <article class="product-display">
+            <a href="mens.html">
+                <img src="assets/useable1.jpg" class="product-display-img" alt="">
+            </a>
+            <a href="womens.html">
+                <img src="assets/placeholder-image.png" class="product-display-img" alt="">
+            </a>
+            <a href="kids.html">
+                <img src="assets/placeholder-image.png" class="product-display-img" alt="">
+            </a>
+            <a href="specials.html">
+                <img src="assets/placeholder-image.png" class="product-display-img" alt="">
+            </a>
+        </article>
     </section>
     
-
+                
     <footer>
-        <p>Aaron Warsop</p>
-        <p>aaronwarsop@gmail.com | GitHub | LinkedIn</p>
-        <p>Copyright disclaimer</p>
+        <section class="footer-content">
+            <article class="footer-nav">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="mens.html">Mens</a></li>
+                    <li><a href="womens.html">Womens</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                </ul>
+            </article>
+            <article class="footer-contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>aaron.warsop2021@my.ntu.ac.uk</li>
+                    <li>aaronwarsop@gmail.com</li>
+                </ul>
+            </article>
+            <article class="footer-socials">
+                <h3>Socials</h3>
+                <ul>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </article>
+        </section>
+        <div class="copyright">
+            © 2023 Aaron Warsop
+        </div>
     </footer>
+    
 </body>
 </html>
